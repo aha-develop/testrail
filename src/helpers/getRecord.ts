@@ -13,7 +13,6 @@ export const getRecord = async (searchStr: string): Promise<Aha.RecordUnion | nu
     }
     return getRecordFromReference(reference);
   } catch (error) {
-    console.log('Error in extractStrToReference => ', error);
     return null;
   }
 };
@@ -42,8 +41,6 @@ export const getRecordFromReference = async (descriptor: IReferenceDescriptor): 
     return record;
   } catch (error) {
     console.log(`Unable to find record for ${descriptor.referenceNum}`);
-    console.error(error);
-
     return null;
   }
 };
