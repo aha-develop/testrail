@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@aha-app/aha-develop-react": "^1.0.6",
-    "axios": "^0.27.2",
     "moment": "^2.29.4"
   },
   "devDependencies": {
