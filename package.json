@@ -1,0 +1,46 @@
+{
+  "name": "aha-develop.testrail",
+  "description": "Testrail Integration",
+  "version": "0.0.0",
+  "author": "Aha! (support@aha.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-develop/testrail"
+  },
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@aha-app/aha-develop-react": "^1.0.6",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "prettier": "^2.7.1"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "views": {
+        "testrailAttribute": {
+          "title": "Testrail",
+          "entryPoint": "src/views/testrail.tsx",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement",
+            "Epic"
+          ]
+        }
+      },
+      "endpoints": {
+        "testrailHook": {
+          "title": "Hook from Testrail",
+          "entryPoint": "src/endpoints/testrail.ts",
+          "public": true
+        }
+      }
+    }
+  }
+}
