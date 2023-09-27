@@ -1,6 +1,6 @@
 {
   "name": "aha-develop.testrail",
-  "description": "Testrail Integration",
+  "description": "TestRail",
   "version": "0.0.0",
   "author": "Aha! (support@aha.io)",
   "repository": {
@@ -24,7 +24,7 @@
     "contributes": {
       "views": {
         "testrailAttribute": {
-          "title": "Testrail",
+          "title": "TestRail",
           "entryPoint": "src/views/testrail.tsx",
           "host": "attribute",
           "recordTypes": [
@@ -36,7 +36,7 @@
       },
       "endpoints": {
         "testrailHook": {
-          "title": "Hook from Testrail",
+          "title": "Hook from TestRail",
           "entryPoint": "src/endpoints/testrail.ts",
           "public": true
         }
